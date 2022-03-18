@@ -1,0 +1,106 @@
+<!-- author : Krishna Katta -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garage Sale | Fund Raiser</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body align="center">
+    <h1 align="center">Conestoga Garage Sale</h1>
+    <h4 align="center">Raising money for the Frontline Fund</h4>   <hr><br/>
+    <table>
+        <tr>
+			<td>Name</td>
+			<td ><input type="text" id="name" placeholder="Name" required></td>
+			<td><span id="validateName" class="validation"></span></td>
+			</tr>
+        <tr>
+            <td>Email</td>
+			<td ><input type="text" id="email" placeholder="email@domain.com" required></td>
+			<td><span id="validateEmail" class="validation"></span></td>
+        </tr>
+        <tr>
+            <td>Credit Card Number</td>
+			<td ><input type="text" id="creditCard" placeholder="xxxx-xxxx-xxxx-xxxx" required></td>
+			<td><span id="validateCardNumber" class="validation"></span></td>
+        </tr>
+        <tr>
+            <td>Credit Card Expiry Month</td>
+			<td ><input type="text" id="expiryMonth" placeholder="MMM" required></td>
+            <td><span id="validateExpiryMonth" class="validation"></span></td>
+        </tr>
+        <tr>
+            <td>Credit Card Expiry Year</td>
+			<td ><input type="text" id="expiryYear" placeholder="yyyy" required></td>
+            <td><span id="validateExpiryYear" class="validation"></span></td>
+        </tr>
+        </table>
+        <p>Buy Generously</p>
+        <table>
+        <tr>
+			<td>Number of Water Bottles ($5)</td>
+			<td ><input type="text" id="waterBottles" placeholder="10" required></td>
+		</tr>
+        <tr>
+            <td>Number of Caps ($20)</td>
+			<td ><input type="text" id="caps" placeholder="10" required></td>
+			
+        </tr>
+        <tr>
+            <td>Number of Pens ($2)</td>
+			<td ><input type="text" id="pens" placeholder="10" required></td>
+			
+        </tr>
+        <tr>
+            <td>Number of Candy Bags ($10)</td>
+			<td ><input type="text" id="candyBags" placeholder="10" required></td>
+        </tr>
+        <tr>
+            <td>Number of Cup Cakes ($3)</td>
+			<td><input type="text" id="cupCakes" placeholder="10" required></td>
+        </tr> 
+        <br>
+        <tr>
+            <td><span id="validateInputNumber" class="validation"></span></td>
+        </tr>
+    </table>
+    <br>
+    <button id="buttonCheckOut" onClick="confirmCheckOut()">Check Out</button>
+
+
+    <div id="divReceipt">
+        <hr>
+        <h4><i>Receipt:</i></h4>
+        <div>
+            <h4>
+                <span> Thank you for your purchase!</span>
+            </h4>
+        </div>
+        
+        <table border="1px" id="tableDetailsReceipt">
+            <tr>
+                <td id="tableTD"><b>Name</b></td>
+                <td><span id="displayName"></span></td>
+            </tr>
+            <tr>
+                <td id="tableTD"><b>Email</b></td>
+                <td><span id="displayEmail"></span></td>
+            </tr>
+            <tr>
+                <td id="tableTD"><b>Credit Card</b></td>
+                <td><span id="displayCardNumber"></span></td>
+            </tr>
+        </table>
+        <br>
+        <table border="1px" id="tableTotalReceipt">
+            <tr id="tableTD">
+                <td><b>Item</b></td>
+                <td><b>Quantity</b></td>
+                <td><b>Unit Price</b></td>
+                <td><b>Total Price</b></td>
+            </tr>
+        </table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* author: Krishna Katta */
+body{
+    background-color: lightsteelblue;
+    border-style: solid;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+p{
+    font-weight: bold;
+}
+
+table{
+    align-items: center;
+}
+
+.validation{
+    font-family: 'Calibri';
+    font-size: small;
+    color: red;
+}
+
+#tableDetailsReceipt{
+    border-collapse: collapse;
+    width: 25%;
+    border-style: solid;
+}
+
+#tableTotalReceipt{
+    border-collapse: collapse;
+    width: 25%;
+    border-style: solid;
+}
+#table{
+    background-color: #90caf99c;
+    column-span: auto;
+    text-align: center;
+}
+
+#divReceipt{
+    display: none;
+}
