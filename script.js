@@ -6,6 +6,7 @@ var waterBottlesQty = "",capsQty = "",pensQty = "",bagsQty = "",cupcakesQty = ""
 
 //Validations
 function validateInfo(){
+    customerTitle += document.getElementById("title").value; 
     customerName += document.getElementById("name").value;
     customerEmail += document.getElementById("email").value;
     creditCardNo += document.getElementById("creditCard").value;
