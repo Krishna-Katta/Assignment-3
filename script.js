@@ -1,7 +1,7 @@
 //author: Krishna Katta
 
 var waterBottle=5,cap=20,pen=2,candyBag=10,cupCake=3;
-var customerName="", customerEmail="", creditCardNo="";
+var customerName="", customerTitle="", customerEmail="", creditCardNo="";
 var waterBottlesQty = "",capsQty = "",pensQty = "",bagsQty = "",cupcakesQty = "", totalAmount = 0;
 
 //Validations
